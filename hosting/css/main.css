@@ -15,8 +15,9 @@
     font-weight: bold !important;
 }
 
-.bg-aqua {
-    background-color: rgb(129, 227, 251);
+.bg-cobalt {
+    /*background-color: rgb(129, 227, 251);*/
+    background-color: rgb(0,71,171);
 }
 
 @media only screen and (max-width: 991px) {
@@ -34,27 +35,26 @@
     text-align: center;
     background-color: rgba(0,0,0,0) !important;
     border: 1px solid white !important;
+    -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
+    box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
 }
 
 .card-header {
+    background-color: rgba(255,255,255,0.025) !important;
     border-bottom: 1px solid white !important;
 }
 
 .card-gold {
-    border: 2px solid rgb(255, 193, 22) !important;
+    border: 2px solid rgb(0,71,171) !important;
 }
 
 .card-header-gold {
-    border-bottom: 2px solid rgb(255, 193, 22) !important;
+    border-bottom: 2px solid rgb(0,71,171) !important;
 }
 
 .card-header p {
     margin: 0;
-}
-
-.pakketten, .vragen {
-    text-align: center;
-    color: white;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -105,4 +105,23 @@
 .accordion-button:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.btn {
+    background-color: rgb(0,115,207) !important;
+    border-color: rgb(0,115,207) !important;
+}
+
+.btn:hover {
+    background-color: rgb(0, 135, 245) !important;
+    border-color: rgb(0, 135, 245) !important;
+}
+
+.accordion {
+    border-radius: .25em;
+    border-bottom: 3px solid rgb(0, 135, 245) !important ;
+}
+
+.accordion-button {
+    background-color: rgba(255,255,255,0.025) !important;
 }
