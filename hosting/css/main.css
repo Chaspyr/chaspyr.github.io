@@ -70,18 +70,18 @@
     width: 100px;
 }
 
-.float-end a {
+.socials a {
     color: white;
     text-decoration: none;
     padding: 5px;
 }
 
-.float-end a:hover {
+.socials a:hover {
     color: rgb(189, 189, 189);
 }
 
-.float-end a i {
-    font-size: 40px;
+.socials a i {
+    font-size: 30px;
 }
 
 .accordion-body p {
@@ -129,4 +129,18 @@
 .divider {
     width: 100px !important;
     border: 1px solid rgba(255,255,255,0.35);
+}
+
+.socials {
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.20);
+}
+
+.fa-question-circle {
+    padding-right: 5px;
+}
+
+.copyright {
+    font-size: 0.75em;
 }
