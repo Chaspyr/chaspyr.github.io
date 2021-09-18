@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Crystal Nodes logo" width="250">
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="#FAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">Discord</a>
+                        <a class="nav-link" href="http://discord.crystalnodes.nl/" target="_blank"><i class="fab fa-discord"></i> Discord</a>
                     </li>
                 </ul>
                 <a class="btn btn-primary" href="#" target="_blank" role="button">
@@ -48,10 +48,17 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid bg-trueblue text-white text-center p-1">
+        <p class="korting"><strong>
+            <i class="fas fa-exclamation"></i>
+            Momenteel geen korting acties.
+            <i class="fas fa-exclamation"></i>
+        </strong></p>
+    </div>
     <div class="container-fluid bg-cobalt text-white p-5">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6">
-                <h1><strong>Minecraft Hosting</strong></h1>
+                <h1><strong id="h1"></strong></h1>
                 <p>We bieden <strong>budgetvriendelijke</strong> en <strong>kwalitatieve</strong> Minecraft server hosting. Al vanaf <strong>€2,00</strong> kan jij je eigen Minecraft server laten draaien! Onze servers draaien op <strong>goede kwaliteit hardware</strong> om jouw server zo soepel mogelijk te laten lopen.</p>
                 <ul>
                     <li><strong>Alle MC versies beschikbaar</strong></li>
@@ -61,7 +68,7 @@
                 <a class="btn btn-primary" href="#pakketten" role="button">Bekijk pakketten</a>
             </div>
             <div class="col-lg-2 desktop-only">
-                <img src="images/banner.png" alt="Banner image" width="400">
+                <img src="images/banner-2.png" alt="Banner image" width="400">
             </div>
         </div>
     </div>
@@ -73,7 +80,7 @@
         </div>
         <div class="row justify-content-center p-5">
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/cobblestone.png" alt="Cobblestone icon">
                         <h2><strong>Cobblestone</strong></h2>
@@ -83,7 +90,7 @@
                         <p class="card-text">AMD Ryzen™ 5 3600 <strong>3,6 GHz</strong></p>
                         <p class="card-text"><strong>512MB</strong> DDR4 RAM</p>
                         <p class="card-text"><strong>7,5GB</strong> NVMe SSD</p>
-                        <p class="card-text">Bedoelt voor <strong>Bungeecord</strong></p>
+                        <p class="card-text">Bedoelt voor <strong>BungeeCord</strong></p>
                         <a href="#" class="btn btn-primary">
                             <i class="fas fa-shopping-cart"></i>
                             Kopen
@@ -92,7 +99,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/coal.png" alt="Coal icon">
                         <h2><strong>Coal</strong></h2>
@@ -111,7 +118,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/copper.png" alt="Copper icon">
                         <h2><strong>Copper</strong></h2>
@@ -132,7 +139,7 @@
         </div>
         <div class="row justify-content-center p-5 hidden" id="pakketten1">
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/iron.png" alt="Iron icon">
                         <h2><strong>Iron</strong></h2>
@@ -151,8 +158,11 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
+                        <div class="extra-tekst">
+                            <p><strong>Meest populair!</strong></p>
+                        </div>
                         <img class="icon" src="images/icons/gold.png" alt="Gold icon">
                         <h2><strong>Gold</strong></h2>
                         <p><strong>€8,00</strong>/maand</p>
@@ -170,7 +180,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/redstone.png" alt="Redstone icon">
                         <h2><strong>Redstone</strong></h2>
@@ -191,7 +201,7 @@
         </div>
         <div class="row justify-content-center p-5 hidden" id="pakketten2">
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/lapis.png" alt="Lapis icon">
                         <h2><strong>Lapis</strong></h2>
@@ -210,7 +220,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/emerald.png" alt="Emerald icon">
                         <h2><strong>Emerald</strong></h2>
@@ -229,7 +239,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card">
+                <div class="card card-hover">
                     <div class="card-header">
                         <img class="icon" src="images/icons/diamond.png" alt="Diamond icon">
                         <h2><strong>Diamond</strong></h2>
@@ -250,7 +260,7 @@
         </div>
         <div class="row justify-content-center p-5 hidden" id="pakketten3">
             <div class="col-lg-3">
-                <div class="card card-gold">
+                <div class="card card-hover card-gold">
                     <div class="card-header card-header-gold">
                         <img class="icon" src="images/icons/netherite.png" alt="Netherite icon">
                         <h2><strong>Netherite</strong></h2>
@@ -269,7 +279,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card card-gold">
+                <div class="card card-hover card-gold">
                     <div class="card-header card-header-gold">
                         <img class="icon" src="images/icons/obsidian.png" alt="Obsidian icon">
                         <h2><strong>Obsidian</strong></h2>
@@ -288,8 +298,11 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card card-gold">
+                <div class="card card-hover card-gold">
                     <div class="card-header card-header-gold">
+                        <div class="extra-tekst">
+                            <p><strong>Beste voor je prijs!</strong></p>
+                        </div>
                         <img class="icon" src="images/icons/bedrock.png" alt="Bedrock icon">
                         <h2><strong>Bedrock</strong></h2>
                         <p><strong>€56,00</strong>/maand</p>
@@ -316,7 +329,7 @@
     <div class="container-fluid bg-cobalt text-white p-5" id="FAQ">
         <div class="row vragen pb-5 justify-content-center text-center">
             <h2>Veel gestelde vragen</h2>
-            <p>Mocht uw vraag hier niet beantwoord worden. Neem dan contact op met <strong>Support</strong> en stel daar uw vraag.</p>
+            <p>Mocht je vraag hier niet beantwoord worden. Join onze <strong>Discord</strong> en neem dan contact op met <strong>Support Medewerkers</strong> om je vraag alsnog te laten beantwoorden.</p>
             <div class="divider"></div>
         </div>
         <div class="row justify-content-center">
@@ -385,7 +398,7 @@
             </div>
             <div class="row py-3">
                 <div class="col text-center">
-                    <a class="btn btn-primary" href="#" target="_blank" role="button">
+                    <a class="btn btn-primary" href="http://discord.crystalnodes.nl/" target="_blank" role="button">
                         <i class="fab fa-discord"></i>
                         Join de discord!
                     </a>
@@ -396,7 +409,7 @@
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p class="socials">
-                <a href="#" target="_blank">
+                <a href="http://discord.crystalnodes.nl/" target="_blank">
                     <i class="fab fa-discord"></i>
                 </a>
                 <a href="#" target="_blank">
@@ -405,11 +418,12 @@
             </p>
             <img src="images/logo.png" alt="Crystal Nodes logo" width="250">
             <p class="m-0 copyright">
-               Copyright &copy; 2021 <strong>Crystal Nodes</strong>
+               Copyright &copy; 2021 <strong>crystalnodes.nl</strong>
             </p>
         </div>
       </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/pakketten.js"></script>
+    <script src="js/h1.js"></script>
 </body>
 </html>

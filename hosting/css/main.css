@@ -38,6 +38,7 @@
     -webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
     box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.35);
+    transition: 0.1s linear;
 }
 
 .card-header {
@@ -58,12 +59,12 @@
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../images/arrows/arrow-down.svg) !important;
+    background-image: url(../images/arrow-down.svg) !important;
     transform: rotate(0deg) !important;
 }
 
 .accordion-button::after {
-    background-image: url(../images/arrows/arrow-down.svg) !important;
+    background-image: url(../images/arrow-down.svg) !important;
 }
 
 .icon {
@@ -74,10 +75,15 @@
     color: white;
     text-decoration: none;
     padding: 5px;
+    transition: .15s;
 }
 
 .socials a:hover {
-    color: rgb(189, 189, 189);
+    color: rgb(0, 135, 245);
+}
+
+.nav-item a:hover {
+    color: rgb(0, 135, 245) !important;
 }
 
 .socials a i {
@@ -143,4 +149,33 @@
 
 .copyright {
     font-size: 0.75em;
+}
+
+.card-hover:hover {
+    transform: scale(1.025);
+    -webkit-box-shadow: 0px 4px 6px 5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 4px 6px 5px rgba(0,0,0,0.35);
+    box-shadow: 0px 4px 6px 5px rgba(0,0,0,0.35);
+    transition: 0.25s linear;
+}
+
+.bg-trueblue {
+    background-color: rgb(0,115,207);
+}
+
+.korting {
+    margin: 5px 0 5px 0 !important;
+}
+
+.extra-tekst {
+    background-color: rgb(0,115,207);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    width: 100%;
+    padding: 5px;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
 }
