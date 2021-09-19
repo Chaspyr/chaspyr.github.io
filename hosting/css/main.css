@@ -159,6 +159,15 @@
     transition: 0.25s linear;
 }
 
+.hover-effect {
+    transition: 0.1s linear;
+}
+
+.hover-effect:hover {
+    transform: scale(1.025);
+    transition: 0.25s linear;
+}
+
 .bg-trueblue {
     background-color: rgb(0,115,207);
 }
