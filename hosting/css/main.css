@@ -137,12 +137,6 @@
     border: 1px solid rgba(255,255,255,0.35);
 }
 
-.socials {
-    padding-bottom: 20px;
-    margin-bottom: 20px !important;
-    border-bottom: 1px solid rgba(255,255,255,0.20);
-}
-
 .fa-question-circle {
     padding-right: 5px;
 }
@@ -187,4 +181,34 @@
     -webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
     box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.15);
+}
+
+.footer-logo {
+    width: 250px !important;
+}
+
+footer ul {
+    padding: 0 !important;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .15s;
+}
+
+footer ul li a:hover {
+    color: rgb(0, 135, 245) !important;
+}
+
+footer ul li a i {
+    font-size: 30px;
+}
+
+.list-title {
+    font-size: 1.3em;
 }
